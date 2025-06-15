@@ -1,21 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
-import Header from "./components/Header";
-import Todoitems from './components/Todoitems';
-import Btn from './components/Button';
+import Headers from './components/Headers';
+import Home from './components/Home';
+import Skills from './components/Skills';
+import Contact from './components/Contact';
+import Projects from './components/Projects';
+import Footer from './components/Footer';
 
 function App() {
-  return (
-    <div className='todo-container'>
-      <Header/>
-      <Todoitems text="Wake Up !!" />
-      <Todoitems text="Code"/>
-      <Todoitems text="Play"/>
-      <Todoitems text="Eat"/>
-      <Todoitems text="Sleep"/>
-      <Btn/>
-    </div>
+  return(
+    <>
+        <Headers/>
+        <Home />
+        <Skills />
+        <Projects/>
+        <Contact/>
+        <Footer/>
+    </>
+
   )
 }
+
+
 
 export default App;
